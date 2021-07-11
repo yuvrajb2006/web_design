@@ -1,0 +1,151 @@
+
+<html>
+  <head>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+      * {
+        font-family: 'Otomanopee One', sans-serif;
+      }
+      .container{
+        height:100vh;
+        display:grid;
+        
+        grid-template-rows:20% 70% 10%;
+        grid-template-columns:30% 70%;
+        
+        
+        grid-template-areas:
+        "header header"
+        "content sidebar"
+        "footer footer"
+       }
+      
+      .header {
+        background-color:#f2b60f;
+        grid-area:header;
+        
+        display:flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+      .content{
+        background-color:#25aff5;
+        grid-area:sidebar;
+        padding:5px;
+        text-align:center;
+      }
+      .sidebar{
+        background-color:#0d6ebd;
+        grid-area:content;
+      }
+      .footer{
+        background-color:#2e3682;
+        grid-area:footer;
+        text-align: center;
+        color: white;
+      }
+      
+      .nav {
+        margin: 10px;
+      }
+      
+      img{
+        width:100%;
+      }
+      
+      .box {
+        width: 150px;
+        border: 2px solid blue;
+        margin:5px;
+        padding:10px;
+      }
+      
+      .box p {
+        text-align: center;
+      }
+      
+      .boxes {
+        display:flex;
+    	flex-direction:row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      
+      .nav a{
+        text-decoration:none;
+        text-transform: capitalize;
+      }
+     
+      .form_container{
+       margin:10px;
+       padding:5px;
+       display:flex;
+       justify-content:center;
+       color:white;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="nav"><a href="top 10 richest">Top 10 Richest</a></div>
+        <div class="nav"><a href="boxes and shapes.html">favourite charecters</a></div>
+      </div>
+      <div class="sidebar">
+      	<div class="form_container">
+ <form action="#">
+   <h1>Register Now</h1>
+   <label for="firstname">Firstname</label><br/>
+   <input type="text" id="firstname" placeholder="Firstname"><br/>
+     
+   <label for="lastname">Lastname</label><br/>
+   <input type="text" id="lastname" placeholder="Lastname"><br/>
+     
+   <label for="email">Email</label><br/>
+   <input type="text" id="email" placeholder="email"><br/>
+     
+   <label for="phone">Phone number</label><br/>
+   <input type="text" id="phone" placeholder="phone"><br/>
+     
+   <label for="gender">Gender</label><br/>
+   <input type="radio" name="gender" value="male">Male<br/>
+   <input type="radio" name="gender" value="female">Female<br/>
+        
+  <label for="dateofbirth">Date of Birth</label><br/>
+  <input type="date" id="dateofbirth"><br/>
+  
+  <input type="submit">
+  
+  </form>
+    </div>
+      </div>
+      <div class="content">
+      	<h2>Sea Creatures</h2>
+    
+        <div class="boxes">
+
+
+        <div class="creature1 box">
+          <p>Octopus</p>
+          <img src="https://images.pexels.com/photos/3046629/pexels-photo-3046629.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"/>
+        </div>
+
+        <div class="creature2 box">
+          <p>Jelly Fish</p>
+          <img src="https://images.pexels.com/photos/1854768/pexels-photo-1854768.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"/>
+        </div>
+
+        <div class="creature3 box">
+          <p>Sea Turtle</p>
+          <img src="https://images.pexels.com/photos/5967799/pexels-photo-5967799.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"/>
+        </div>
+        </div>
+      </div>
+      <div class="footer">
+      	<p>Developed By Yuvraj Bellani. Penrose Learning Center, Dubai &copy;</p>
+      </div>
+    </div>
+  </body>
+</html>
